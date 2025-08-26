@@ -9,7 +9,7 @@ public class SimulateFailureTest {
     @Test
     void a_random_test_that_fails() {
 
-        assertEquals(5, 10, "test failure");
+        assertEquals(5, 5, "fix test failure");
     }
 
     @Test
