@@ -15,6 +15,9 @@ public interface OrderMapper {
 
     @Mapping(target = "orderedProducts", source = "orderedProducts")
     @Mapping(target = "stripePayment", ignore = true)
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "totalPrice", ignore = true)
+    @Mapping(target = "status", ignore = true)
     OrderEntity toEntity(OrderDto orderEntity);
 
     CheckoutProduct toEntity(OrderDto.CheckoutProductDto request);

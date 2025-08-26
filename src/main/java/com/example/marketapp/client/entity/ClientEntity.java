@@ -10,8 +10,6 @@ public class ClientEntity {
     @Id
     private String id;
     private String stripeCustomerId;
-    private String stripePaymentMethodId;
-    private String stripeSubscriptionId;
     private String name;
     private String email;
     private String phoneNumber;

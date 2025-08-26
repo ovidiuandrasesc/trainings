@@ -20,9 +20,6 @@ public class StripeOrderServiceImpl implements StripeOrderService {
                 .build();
 
         PaymentIntent paymentIntent = PaymentIntent.create(params);
-        paymentIntent.
-        StripePaymentDto dto = new StripePaymentDto(stripeCustomerId, paymentIntent.getInvoiceObject().getCharge(),
-                paymentIntent.getId(), paymentIntent.getStatus()));
-        return null;
+        return new StripePaymentDto(stripeCustomerId,paymentIntent.getId());
     }
 }
